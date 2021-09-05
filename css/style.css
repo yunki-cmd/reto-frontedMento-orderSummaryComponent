@@ -1,6 +1,8 @@
 body{
   height:100vh;
-  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +113,7 @@ transition-duration:200ms ;
 @media screen and (max-width:380px) and (min-width:765px)  {
   body {
     width: 375px;
+    background-image: url(../images/pattern-background-mobile.svg);
   }
   .card__Summary{
     width: 300px;
@@ -123,6 +126,7 @@ transition-duration:200ms ;
 @media screen and (min-width: 768px) and (max-width:1000px){
   body {
     width: 768px;
+     background-image: url(../images/pattern-background-mobile.svg);
   }
   .card__Summary{
     width: 300px;
