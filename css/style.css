@@ -1,0 +1,143 @@
+body{
+  width: 1440px;
+  height:100vh;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.card__Summary{
+  z-index: 1;
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:hsl(225, 100%, 98%);
+}
+.card__summary__img img{
+  border-top-left-radius:20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+.card__summary__title{
+  margin: 1rem;
+  font-weight: bolder;
+  font-size: 32px;
+  color: hsl(223, 47%, 23%)
+}
+.card__summary__text{
+  margin-block-start: 0;
+  color: hsl(224, 23%, 55%);
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+}
+.card__summary__price{
+  position: relative;
+  padding: 1.5rem;
+  width: 70%;
+  display: inline-flex;
+  background-color:whitesmoke;
+  border-radius: 20px;
+}
+.card__mini_price{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 3rem 0 0;
+  justify-self: start;
+}
+.card__summary__price__text{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__summary__title--plan,.card__summary__title--price,.card__summary__button{
+  font-weight: bolder;
+  font-size: 16px;
+}
+.card__summary__title--plan{
+  color: hsl(223, 47%, 23%);
+  font-weight: bolder;
+  padding-bottom:5px ;
+}
+.card__summary__title--price{
+  color: hsl(224, 23%, 55%);
+}
+
+.card__summary__price__button{
+ align-self: center;
+ position: relative;
+ color: hsl(245, 75%, 52%);
+font-family: 'Red Hat Display', sans-serif;
+font-weight: 700;
+font-size: 16px;
+cursor: pointer;
+transition-duration:200ms ;
+}
+.card__summary__price__button:hover{
+  color: hsl(224, 23%, 55%);
+}
+.card__summary__button{
+  margin: 1.5rem 0 1.5rem 0;
+  width: 80%;
+}
+.card__summary__button__payment{
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.card__summary__button__payment:hover{
+  box-shadow: 0px 17px 15px 0px hsl(245, 75%, 52%,0.2);
+}
+.card__summary__button__cancel{
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.card__summary__button__cancel:hover{
+  color: hsl(245, 75%, 52%);
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    width: 375px;
+  }
+  .card__Summary{
+    width: 300px;
+    margin: 1rem;
+  }
+  .card__mini_price{
+    padding: 0 1rem 0 0;
+  }
+}
+.custom-shape-divider-top-1630803463 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1630803463 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 329px;
+}
+
+.custom-shape-divider-top-1630803463 .shape-fill {
+    fill: hsl(227, 47%, 89%);
+}
