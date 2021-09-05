@@ -1,5 +1,4 @@
 body{
-  width: 1440px;
   height:100vh;
   background-color: hsl(225, 100%, 94%);
   display: flex;
@@ -109,7 +108,7 @@ transition-duration:200ms ;
   color: hsl(245, 75%, 52%);
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:380px) and (min-width:765px)  {
   body {
     width: 375px;
   }
@@ -121,7 +120,7 @@ transition-duration:200ms ;
     padding: 0 1rem 0 0;
   }
 }
-@media screen and (max-width: 768px) and (min-width:768px) {
+@media screen and (min-width: 768px) and (max-width:1000px){
   body {
     width: 768px;
   }
@@ -133,6 +132,20 @@ transition-duration:200ms ;
     padding: 0 1rem 0 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    margin: auto;
+  }
+  .card__Summary{
+    width: 300px;
+    margin: 1rem;
+  }
+  .card__mini_price{
+    padding: 0 1rem 0 0;
+  }
+}
+
 .custom-shape-divider-top-1630803463 {
     position: absolute;
     top: 0;
