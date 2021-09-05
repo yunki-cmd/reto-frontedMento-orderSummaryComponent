@@ -109,9 +109,21 @@ transition-duration:200ms ;
   color: hsl(245, 75%, 52%);
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width:375px) {
   body {
     width: 375px;
+  }
+  .card__Summary{
+    width: 300px;
+    margin: 1rem;
+  }
+  .card__mini_price{
+    padding: 0 1rem 0 0;
+  }
+}
+@media screen and (max-width: 768px) and (min-width:768px) {
+  body {
+    width: 768px;
   }
   .card__Summary{
     width: 300px;
